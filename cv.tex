@@ -1,0 +1,143 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{cv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{fancyhdr,graphicx,xcolor,colortbl}
+\usepackage{fontspec}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+% Set applicant's personal data for header
+\name{Ahmed Hendawy}
+\address{Cairo, Egypt \linebreak +201553025327 \linebreak lildevhind@gmail.com}
+\contacts{a7aaaa}
+
+\links{
+	{\color{blue}\underline{\href{https://www.github.com/devhindo}{GitHub}}} \linebreak 
+	{\color{blue}\underline{\href{https://www.linkedin.com/in/hindawy/}{Linkedin}}} \linebreak 
+	{\color{blue}\underline{\href{https://www.leetcode.com/devhindo}{Leetcode}}}}
+
+
+\begin{document}
+
+
+	% Print the header
+	\makeheader 
+
+
+
+	% Print the content
+		
+
+	\begin{cvsection}{Employment}
+				\vspace{3mm}
+
+		% ITI
+
+				\begin{cvsubsection}{Software Backend Engineer, Intern}{Information Technology Institute (ITI)}{July 2023 - August 2023 \linebreak Mansoura, Egypt}
+			\vspace{3mm}
+
+			\begin{itemize}
+				\item Learned CRUD operations and different REST APIs concepts.
+				\item Built full-stack library management system to authenticate students and provide admin dashboard for management the library.
+				\item implemented user authentication and database concepts.
+				\item Created UI components like forms to interface with the server.
+				\item \textbf{Skills:} Python; Django; PostgreSQL; Bootstrap; HTML; CSS.
+			\end{itemize}
+		\end{cvsubsection}		
+		% NTI
+		\begin{cvsubsection}{AI Researcher, Intern}{National Telecommunication Institute (NTI)}{July 2022 - August 2023 \linebreak Cairo, Egypt}
+			\vspace{3mm}
+
+			\begin{itemize}
+				\item Created machine learning models for water validation systems
+				\item Implemented image recognition algorithms using TensorFlow.
+				\item \textbf{Skills:} Python; TensorFlow; Jupyter Notebook; Linear Algebra 
+			\end{itemize}
+		\end{cvsubsection}
+		
+
+		
+	
+		
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+	
+	\vspace{3mm}
+
+		\begin{cvsubsection}{Mansoura, Egypt}{Mansoura University}{Fall 2019 -- July 2024}
+			\begin{itemize}
+				\item Faculty of Engineering, Department of Computer Engineering.
+				\item Pursuing B.S.E. in Computer Engineering and Control Systems.
+				
+				\item Undergraduate Coursework: Operating Systems; Databases; Data Structures; Algorithms; Programming Languages; Comp. Architecture; Computer Graphics; Linear Algebra; Calculus III; Numerical Analysis; Digital Control; PLC Design.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+	\vspace{3mm}
+
+		\begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{{\color{blue}\underline{\href{https://github.com/devhindo/x}{X}}}} (August 2023). CLI tool to interface with Twitter API, e.g. posting tweets.  Go, OAuth 2.0, HTTPS
+				\item \textbf{{\color{blue}\underline{\href{https://github.com/devhindo/obliviax}{Obliviax}}}} (May 2023). Chess engine implements the Universal Chess Interface protocol.  C++, OOP
+				
+				
+				\item \textbf{{\color{blue}\underline{\href{https://github.com/lilhind/iti23/tree/main/library}{Library}}}} (August 2023). library management system including student authentication and admin dashboard implementation.  Python, Django, PostgreSQL, HTML, CSS, JS
+
+				\item \textbf{{\color{blue}\underline{\href{https://github.com/devhindo/doodle}{Doodle}}}} (April 2023). Chrome extension where users can take notes on webpages in real-time and draw illustrations. TypeScript, Chrome API				
+				
+				\item \textbf{{\color{blue}\underline{\href{https://github.com/devhindo/leroy}{Leroy}}}} (July 2023). Discord bot to execute prompts based on user input.  Go, Discord API
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Volunteering}
+				\vspace{3mm}
+
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{ICPC Mansoura University (2022 – Now):} Organized several local competitive programming contests in my university.
+				\item \textbf{IEEE Mansoura Student Branch(August 2020- Novermber 2022):} Attended and participated in organizing many events like: Tech-Elixir 2.0, Career Insider 6.0 and 
+IEEE Victoris 1.0. 
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+
+	\begin{cvsection}{Languages and Technologies}
+					\vspace{3mm}
+
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item Python; Go; C++; C; C\#.NET; SQL; JavaScript; TypeScript 
+				\item Git; Docker; MySQL; PostgreSQL; Linux; Bash; LaTeX
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
+
