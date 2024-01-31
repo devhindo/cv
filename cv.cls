@@ -168,6 +168,8 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
   \textbf{\LARGE\textls[110]{\textsc{\@name}}}
 }
 
+
+
 % links
 
 \newcommand\links[1]{\def\@links{#1}}
