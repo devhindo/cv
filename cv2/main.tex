@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author :  yiyangiliu (https://github.com/yiyangiliu/Resume)
+% Thanks to: Jake Gutierrez (https://github.com/jakegut/resume)
+%            Sourabh Bajaj (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\fontfamily{Georgia}\selectfont
+\fontseries{m}\selectfont
+% \fontseries{bx}\selectfont
+\usepackage{latexsym}
+\usepackage{microtype}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\renewcommand{\bfseries}{\fontseries{b}\selectfont}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\small\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \normalsize\textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\scriptsize$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=.4in, labelsep=.13in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\LARGE \scshape \bfseries Ahmed Hendawy} \\ \vspace{1pt}
+    Cairo, Egypt \\ \vspace{1pt}
+    \small \href{mailto:lildevhind@gmail.com}{\underline{lildevhind@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/devhindo}{\underline{linkedin.com/in/devhindo}} $|$
+    % \href{https://www.devhindo.tech/}{\underline{https://www.devhindo.tech/}} $|$
+    \href{https://github.com/devhindo}{\underline{github.com/devhindo}}
+\end{center}
+
+%-----------Summary-----------
+\section{SUMMARY}
+ \resumeSubHeadingListStart
+    I am a Software Engineer interested in backend and cloud development. I'm proficient in Go, Python, and JavaScript, I am currently enhancing my skills in distributed systems and cloud-native development. All my work is showcased on my GitHub.
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mansoura University}{Mansoura, Egypt}
+      {BSE, Computer Engineering}{Aug. 2019 -- June 2024}
+       \newline
+       Faculty of Engineering, Department of Computer Engineering and Control Systems.
+       \newline Undergraduate Coursework: Operating Systems; Databases; Data Structures; Algorithms; Programming Languages; Comp. Architecture; Computer Graphics; Linear Algebra; Calculus III; Numerical Analysis; Digital
+Control.
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    
+
+    \resumeSubheading
+      {Information Technology Institute (ITI)}{Mansoura, Egypt}
+      {Backend Engineering Intern}{July 2023 -- August 2023}
+      \resumeItemListStart
+        \resumeItem{\textbf{General Backend Patterns (\href{https://github.com/devhindo/iti23}{\underline{GitHub}}):} Learned general backend practices including CRUD operations, authentication, DB integration, etc.}
+        \resumeItem{\textbf{Library Management System (\href{https://github.com/devhindo/iti23/tree/main/library}{\underline{GitHub}}):} Used Tensorflow \& Keras training multiple depth-learning models on multiple GPUs, fine-tuning with multiple techniques such as pseudo-label, cross-verification and model fusion.}
+        \resumeItem{\textbf{Skills:} Python; Django; PostgreSQL; Bootstrap; HTML; CSS; JavaScript..}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {National Telecommunication Institute (NTI)}{Cairo, Egypt}
+      {AI Engineering Intern}{July 2022 -- August 2022}
+      \resumeItemListStart
+        \resumeItem{\textbf{Recognition Systems:} Implemented sophisticated image recognition algorithms, significantly enhancing the accuracy and efficiency
+of detection systems.}
+        \resumeItem{\textbf{Math Knowledge:} Applied knowledge of Linear Algebra to optimize and fine-tune machine learning models.}
+        \resumeItem{\textbf{Skills:} Python; TensorFlow; Jupyter Notebook; Linear Algebra.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{X (\href{https://x-blush.vercel.app/}{\underline{Demo}}, \href{https://github.com/devhindo/x}{\underline{GitHub}}):} Currently maintaining this open-source project with over 100 active users. This project enables users \\to interact with Twitter API, facilitating tasks such as posting tweets and scheduling future tweets. \\It incorporates OAuth2 protocol for user authentication. Go, OAuth 2.0, HTTPS, Node.js, Next.js, TypeScript}{}
+      \resumeProjectHeading
+        {\textbf{Dear self (\href{https://dearself.vercel.app/}{\underline{Demo}}, \href{https://github.com/devhindo/dearself}{\underline{GitHub}}):} Developed email scheduling service, leveraging GoLang for backend operations and Next.js \\for Frontend development. The system integrates with Mailjet to facilitate reliable email dispatch. This project\\ demonstrates proficiency in full-stack development, asynchronous programming, and third-party API integration.}{}
+      \resumeProjectHeading
+        {\textbf{Doodle (\href{https://github.com/devhindo/doodle}{\underline{GitHub}}):}  Chrome extension where users can take notes on webpages. TypeScript, Chrome API}{}
+      \resumeProjectHeading
+        {\textbf{Katty (\href{https://github.com/devhindo/katty}{\underline{GitHub}}):}  Discord bot to fetch songs’ lyrics. Go, Discord API, Musixmatch API}{}
+      \resumeProjectHeading
+        {\textbf{Obliviax (\href{https://github.com/devhindo/obliviax}{\underline{GitHub}}):}  Chess engine implements the Universal Chess Interface protocol. C++, OOP}{}
+    \resumeSubHeadingListEnd
+
+%
+%-----------SKILLS-----------
+\section{SKILLS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Languages:} Go, Python, HTML, CSS, JavaScript, TypeScript, C, C\small{++}, Bash.}{}
+      \resumeProjectHeading
+          {\textbf{Technologies:} Node.js, Next.js, Django.}{}
+      \resumeProjectHeading
+          {\textbf{Developer Tools:} Git, Docker, Cloud Platform, VS Code, MySQL, PostgreSQL, MongoDB, Linux, Shell, LaTeX.}{}
+      \resumeProjectHeading
+          {\textbf{Software Engineering:} Object-oriented design, Test-driven development (TTD), Algorithm Design, Data Structures,\\Problem Solving, Complexity Analysis, Distributed Systems, Relational database, NoSQL databases.}{}
+    \resumeSubHeadingListEnd
+
+%
+% -------------Volunteering-------------------
+\section{VOLUNTEERING}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{IEEE Mansoura Student Branch(August 2020- Novermber 2022):} Served as a coordinator and helped in organizing \\competitive programming contests to foster an intellectually stimulating environment.}{}
+      \resumeProjectHeading
+        {\textbf{ICPC Mansoura University (April 2022- July 2023):} Coordinated various events including Tech-Elixir 2.0, Career \\Insider 6.0, and IEEE Victoris 1.0.}{}
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
+
+% https://github.com/ianliuy/Resume/blob/main/Yiyang_Liu_CV.pdf
